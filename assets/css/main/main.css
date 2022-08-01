@@ -52,8 +52,24 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--lime-green);
+  position: relative;
+  margin-left: 1rem;
+}
+
+.main__total::before {
+  content: url("/assets/images/icon-up.svg");
+  top: -0.125rem;
+  left: -0.813rem;
+  position: absolute;
 }
 
 .card4 .main__total {
   color: var(--bright-red);
+}
+
+.card4 .main__total::before {
+  content: url("/assets/images/icon-down.svg");
+  top: -0.125rem;
+  left: -0.813rem;
+  position: absolute;
 }
