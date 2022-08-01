@@ -13,6 +13,7 @@ const initalColors = {
     html,
     "--light-grayish-blue-card-bg-hover"
   ),
+  veryPaleBlueTopBgPattern: getStyle(html, "--very-pale-blue-top-bg-pattern"),
 };
 
 const darkMode = {
@@ -24,6 +25,7 @@ const darkMode = {
     html,
     "--dark-desaturated-blue-card-bg-hover"
   ),
+  veryPaleBlueTopBgPattern: getStyle(html, "--very-dark-blue-top-bg-pattern"),
 };
 
 const transformKey = (key) =>
