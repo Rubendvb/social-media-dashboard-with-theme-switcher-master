@@ -4,63 +4,90 @@
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin-bottom: 1rem;
   background-color: var(--light-grayish-blue-card-bg);
   border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .card__icon {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 .main__nameUser {
-  font-size: 0.75rem;
   color: var(--dark-grayish-blue-text);
-  text-align: center;
+  font-size: 0.75rem;
   font-weight: 700;
   margin: 2rem 0 2rem 0.5rem;
+  text-align: center;
 }
 
 .main__numberFollowers {
-  font-size: 3.4rem;
   color: var(--very-dark-blue-text);
-  text-align: center;
+  font-size: 3.4rem;
   font-weight: 700;
   line-height: 1.2;
+  text-align: center;
 }
 
 .main__followers {
-  font-size: 0.75rem;
   color: var(--dark-grayish-blue-text);
-  text-align: center;
+  font-size: 0.75rem;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: 0.313rem;
   margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .main__total {
+  color: var(--lime-green);
   font-size: 0.75rem;
-  text-align: center;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: var(--lime-green);
-  position: relative;
   margin-left: 1rem;
+  position: relative;
+  text-align: center;
 }
 
 .main__total::before {
   content: url("/assets/images/icon-up.svg");
-  top: -0.125rem;
   left: -0.813rem;
   position: absolute;
+  top: -0.125rem;
+}
+
+.card1 {
+  border-top: 0.25rem solid var(--facebook);
+}
+
+.card2 {
+  border-top: 0.25rem solid var(--twitter);
+}
+
+.card3 {
+  position: relative;
+}
+
+.card3::before {
+  background: var(--instagram);
+  border-radius: 0.3rem 0.3rem 0 0;
+  content: "";
+  height: 0.25rem;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.card4 {
+  border-top: 0.25rem solid var(--youtube);
 }
 
 .card4 .main__total {
