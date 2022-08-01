@@ -1,0 +1,12 @@
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview__h2 {
+  font-size: 1.55rem;
+  color: var(--dark-grayish-blue-text);
+  text-align: left;
+  font-weight: 700;
+  margin: 2rem 0 2rem;
+}
