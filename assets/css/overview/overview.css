@@ -10,3 +10,57 @@
   font-weight: 700;
   margin: 2rem 0 2rem;
 }
+
+.overview__card {
+  width: 100%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.overview__card-info > .paragraph {
+  margin-bottom: 0;
+}
+
+.overview__card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.overview__card-number {
+  font-size: 2rem;
+  color: var(--very-dark-blue-text);
+  text-align: left;
+  font-weight: 700;
+}
+
+.overview__card-porcent {
+  font-size: 0.75rem;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+
+.overview__card-porcent.positive {
+  color: var(--lime-green);
+}
+
+.overview__card-porcent.negative {
+  color: var(--bright-red);
+}
+
+.overview__card-porcent.positive::before {
+  content: url("/assets/images/icon-up.svg");
+  left: -0.7rem;
+  position: absolute;
+  top: -0.125rem;
+}
+
+.overview__card-porcent.negative::before {
+  content: url("/assets/images/icon-down.svg");
+  left: -0.7rem;
+  position: absolute;
+  top: -0.125rem;
+}
