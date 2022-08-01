@@ -41,6 +41,7 @@
   font-weight: 700;
   position: relative;
   text-align: center;
+  align-self: flex-end;
 }
 
 .overview__card-porcent.positive {
@@ -88,8 +89,8 @@
     gap: 2rem;
   }
 
-  .overview__card-info {
-    align-items: flex-end;
+  .overview__card-porcent {
+    align-self: flex-end;
   }
 
   .overview__h2 {
