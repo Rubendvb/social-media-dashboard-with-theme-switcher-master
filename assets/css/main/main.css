@@ -1,0 +1,59 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: var(--light-grayish-blue-card-bg);
+  border-radius: 0.3rem;
+}
+
+.card__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__nameUser {
+  font-size: 0.75rem;
+  color: var(--dark-grayish-blue-text);
+  text-align: center;
+  font-weight: 700;
+  margin: 2rem 0 2rem 0.5rem;
+}
+
+.main__numberFollowers {
+  font-size: 3.4rem;
+  color: var(--very-dark-blue-text);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main__followers {
+  font-size: 0.75rem;
+  color: var(--dark-grayish-blue-text);
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.313rem;
+  margin-bottom: 1.5rem;
+}
+
+.main__total {
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--lime-green);
+}
+
+.card4 .main__total {
+  color: var(--bright-red);
+}
