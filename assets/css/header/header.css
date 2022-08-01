@@ -74,3 +74,26 @@
   content: "";
   left: calc(100% - 1.35rem);
 }
+
+@media screen and (min-width: 1200px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__h1 {
+    font-size: 2.2rem;
+  }
+
+  .paragraph {
+    font-size: 1.1rem;
+  }
+
+  .header__bottom {
+    border-bottom: none;
+  }
+
+  .header__mode span {
+    margin-right: 1rem;
+  }
+}

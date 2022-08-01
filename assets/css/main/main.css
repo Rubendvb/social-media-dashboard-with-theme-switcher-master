@@ -13,6 +13,19 @@
   width: 100%;
 }
 
+.card-dark-mode {
+  background-color: var(--dark-desaturated-blue-card-bg);
+}
+
+.text-dark-mode {
+  color: var(--white-text);
+}
+
+.card:hover {
+  background-color: var(--light-grayish-blue-card-bg-hover);
+  cursor: pointer;
+}
+
 .card__icon {
   align-items: center;
   display: flex;
@@ -99,4 +112,36 @@
   top: -0.125rem;
   left: -0.813rem;
   position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .card4 {
+    grid-column: 2/3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .card4 {
+    grid-column: inherit;
+  }
 }

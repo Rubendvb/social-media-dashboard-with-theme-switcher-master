@@ -17,6 +17,7 @@
   --dark-desaturated-blue-card-bg: hsl(228, 28%, 20%);
   --desaturated-blue-text: hsl(228, 34%, 66%);
   --white-text: hsl(0, 0%, 100%);
+  --dark-desaturated-blue-card-bg-hover: hsl(226, 22%, 27%);
 
   /* Light Theme */
   --white-bg: hsl(0, 0%, 100%);
@@ -24,6 +25,7 @@
   --light-grayish-blue-card-bg: hsl(227, 47%, 96%);
   --dark-grayish-blue-text: hsl(228, 12%, 44%);
   --very-dark-blue-text: hsl(230, 17%, 14%);
+  --light-grayish-blue-card-bg-hover: hsl(231, 30%, 91%);
 
   --font-family: "Inter", sans-serif;
 }
@@ -39,10 +41,23 @@ body {
   font-family: var(--font-family);
 }
 
+.dark-mode {
+  background-color: var(--very-dark-blue-bg);
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-align: center;
+  font-weight: 700;
+  color: var(--very-dark-blue-text);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
 }
